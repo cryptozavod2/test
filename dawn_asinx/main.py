@@ -361,6 +361,8 @@ async def main():
                         f"💰 *Points Earned:* {i[1]}\n\n"
                         )
                 await queue_telegram_message(message)
+            
+            break
                 
             await bot.countdown(275)
 
