@@ -3,8 +3,8 @@ on:
     push:
     workflow_dispatch:
     schedule:
-      - cron: '*/15 * * * *'
-    #   - cron: '*/31 * * * *'
+      - cron: '*/5 * * * *'
+      # - cron: '*/31 * * * *'
     # schedule:
     #     - cron: '1/2 * * * *'
     # schedule:
@@ -42,7 +42,7 @@ jobs:
 
     job_9hits:
         runs-on: ubuntu-latest
-        timeout-minutes: 14
+        timeout-minutes: 4.5
         steps:
             - name: Checkout Code
               uses: actions/checkout@v4
