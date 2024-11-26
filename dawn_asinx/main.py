@@ -362,9 +362,12 @@ async def main():
                         )
                 await queue_telegram_message(message)
             
-            break
+            
+            
                 
-            await bot.countdown(275)
+            # await bot.countdown(275)
+            await bot.countdown(10)
+            break
 
     except KeyboardInterrupt:
         bot.log_colored("WARNING", "Process interrupted by user. Exiting...", Colors.WARNING)
