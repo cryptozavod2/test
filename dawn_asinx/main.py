@@ -365,9 +365,7 @@ async def main():
             
             
                 
-            # await bot.countdown(275)
-            await bot.countdown(10)
-            break
+            await bot.countdown(275)
 
     except KeyboardInterrupt:
         bot.log_colored("WARNING", "Process interrupted by user. Exiting...", Colors.WARNING)
