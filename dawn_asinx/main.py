@@ -118,7 +118,7 @@ class DawnValidatorBot:
                 self.log_colored("INFO", f"Process completed for {email}", Colors.SUCCESS)
                 return True
             except Exception as e:
-                # self.log_colored("ERROR", f"Keep-alive failed for {email}: {str(e)}", Colors.WARNING)
+                self.log_colored("ERROR", f"{i} - Keep-alive failed for {email}: {str(e)}", Colors.WARNING)
                 ex = e
                 await asyncio.sleep(.5)
         self.log_colored("ERROR", f"Keep-alive failed for {email}: {str(ex)}", Colors.ERROR)
